@@ -14,8 +14,8 @@
 
 body {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: var(--deep-teal);
-  color: var(--mint);
+  background: var(--mint);
+  color: var(--white);
   line-height: 1.6;
 }
 
@@ -37,16 +37,22 @@ main {
 
 .section {
   padding: 96px 0;
-  border-top: 1px solid rgba(208, 255, 243, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--deep-teal);
+  color: var(--white);
+}
+
+.section:nth-of-type(even) {
+  background: var(--mid-teal);
 }
 
 .header {
   padding: 24px 0;
-  background: rgba(11, 65, 63, 0.95);
+  background: rgba(14, 117, 109, 0.95);
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(208, 255, 243, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-inner {
@@ -84,13 +90,13 @@ main {
 }
 
 .nav a:hover {
-  color: var(--white);
+  color: var(--mint);
   border-color: var(--mint);
 }
 
 .hero {
   padding: 120px 0 72px;
-  background: linear-gradient(135deg, rgba(13, 117, 109, 0.3), rgba(11, 65, 63, 0.9));
+  background: linear-gradient(135deg, rgba(14, 117, 109, 0.95), rgba(11, 65, 63, 0.98));
 }
 
 .hero-grid {
@@ -109,7 +115,7 @@ main {
 .hero p {
   max-width: 520px;
   margin-top: 16px;
-  color: rgba(208, 255, 243, 0.9);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .cta-row {
@@ -120,13 +126,13 @@ main {
 }
 
 .button {
-  border: 1px solid var(--mint);
+  border: 1px solid var(--white);
   padding: 14px 28px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.15em;
   background: transparent;
-  color: var(--mint);
+  color: var(--white);
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -136,9 +142,9 @@ main {
 }
 
 .hero-card {
-  border: 1px solid rgba(208, 255, 243, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 24px;
-  background: rgba(11, 65, 63, 0.6);
+  background: rgba(11, 65, 63, 0.7);
   display: grid;
   gap: 24px;
 }
@@ -149,14 +155,14 @@ main {
 }
 
 .image-placeholder {
-  border: 1px dashed rgba(208, 255, 243, 0.6);
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: rgba(208, 255, 243, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .stats {
@@ -166,15 +172,15 @@ main {
 }
 
 .stat-card {
-  border: 1px solid rgba(208, 255, 243, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 24px;
-  background: rgba(14, 117, 109, 0.2);
+  background: rgba(14, 117, 109, 0.35);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .stat-card:hover {
   transform: translateY(-6px);
-  border-color: var(--mint);
+  border-color: var(--white);
 }
 
 .stat-number {
@@ -198,15 +204,15 @@ main {
 }
 
 .program-card {
-  border: 1px solid rgba(208, 255, 243, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 24px;
-  background: rgba(11, 65, 63, 0.5);
+  background: rgba(255, 255, 255, 0.08);
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .program-card:hover {
-  background: rgba(14, 117, 109, 0.45);
-  border-color: var(--mint);
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--white);
 }
 
 .program-card h3 {
@@ -220,9 +226,9 @@ main {
 }
 
 .contact-card {
-  border: 1px solid rgba(208, 255, 243, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 28px;
-  background: rgba(11, 65, 63, 0.6);
+  background: rgba(11, 65, 63, 0.7);
 }
 
 form {
@@ -233,9 +239,9 @@ form {
 input,
 textarea {
   width: 100%;
-  border: 1px solid rgba(208, 255, 243, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   background: transparent;
-  color: var(--mint);
+  color: var(--white);
   padding: 12px 16px;
   font-size: 1rem;
   font-family: inherit;
@@ -244,7 +250,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--mint);
+  border-color: var(--white);
 }
 
 textarea {
@@ -254,7 +260,8 @@ textarea {
 
 footer {
   padding: 48px 0 64px;
-  border-top: 1px solid rgba(208, 255, 243, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--deep-teal);
 }
 
 .footer-inner {

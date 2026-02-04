@@ -55,10 +55,6 @@ export default function HomePage() {
         <div className="container header-inner">
           <div className="logo-group">
             <Image className="logo" src="/LOGO.png" alt="Edenwoods Eduhub Foundation logo" width={80} height={80} />
-            <div>
-              <div>Edenwoods Eduhub Foundation</div>
-              <small>Hazaribagh, Jharkhand</small>
-            </div>
           </div>
           <nav className="nav">
             <a href="#mission">Mission</a>
@@ -86,7 +82,14 @@ export default function HomePage() {
             </div>
             <div className="hero-card">
               <Image className="logo" src="/LOGO.png" alt="Edenwoods Eduhub Foundation" width={90} height={90} />
-              <div className="image-placeholder">Image Placeholder</div>
+              <div className="image-frame">
+                <Image
+                  src="/photos/pexels-roman-odintsov-12719334.jpg"
+                  alt="Students learning together"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </div>
               <p>
                 We collaborate with schools, families, and local leaders to deliver inclusive learning
                 experiences for every child in Jharkhand.
@@ -143,7 +146,20 @@ export default function HomePage() {
                   <Image className="logo" src="/LOGO.png" alt="Logo" width={52} height={52} />
                   <h3>{program.title}</h3>
                   <p>{program.description}</p>
-                  <div className="image-placeholder">Image Placeholder</div>
+                  <div className="image-frame">
+                    <Image
+                      src={
+                        program.title === 'Digital Learning Labs'
+                          ? '/photos/pexels-made-by-lyzoo-2157704947-34978369.jpg'
+                          : program.title === 'Community Literacy Drives'
+                            ? '/photos/pexels-ahmed-akacha-3313934-6757958.jpg'
+                            : '/photos/pexels-rohan-dewangan-2844320-10146961.jpg'
+                      }
+                      alt={`${program.title} program`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 30vw"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
@@ -188,7 +204,14 @@ export default function HomePage() {
                 <h3>Connect with us</h3>
                 <p>Hazaribagh, Jharkhand</p>
                 <p>Email: contact@edenwoods.org</p>
-                <div className="image-placeholder">Image Placeholder</div>
+                <div className="image-frame">
+                  <Image
+                    src="/photos/pexels-ron-lach-10638220.jpg"
+                    alt="Community workshop"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                  />
+                </div>
               </div>
               <div className="contact-card">
                 <form>

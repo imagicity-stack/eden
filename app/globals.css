@@ -14,8 +14,8 @@
 
 body {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: var(--deep-teal);
-  color: var(--mint);
+  background: var(--mint);
+  color: var(--deep-teal);
   line-height: 1.6;
 }
 

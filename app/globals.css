@@ -154,15 +154,17 @@ main {
   height: 80px;
 }
 
-.image-placeholder {
-  border: 1px dashed rgba(11, 65, 63, 0.3);
+.image-frame {
+  border: 1px solid rgba(11, 65, 63, 0.2);
   height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: rgba(11, 65, 63, 0.6);
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.image-frame img {
+  object-fit: cover;
 }
 
 .stats {

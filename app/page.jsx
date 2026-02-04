@@ -55,10 +55,6 @@ export default function HomePage() {
         <div className="container header-inner">
           <div className="logo-group">
             <Image className="logo" src="/LOGO.png" alt="Edenwoods Eduhub Foundation logo" width={80} height={80} />
-            <div>
-              <div>Edenwoods Eduhub Foundation</div>
-              <small>Hazaribagh, Jharkhand</small>
-            </div>
           </div>
           <nav className="nav">
             <a href="#mission">Mission</a>
